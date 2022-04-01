@@ -1,0 +1,27 @@
+{
+  "host": "192.168.1.1",
+  "scheme": "https",
+  "logDir": "/tmp",
+  "trustyProxy": "127.0.0.0/24",
+  "trustyHeader": "X-Real-Ip",
+  "proxyAccount": {
+    "username": "admin",
+    "base64pass": "c2VjcmV0"
+  },
+  "acceptableFrom": {
+    "local": {
+      "base64pass": "cHVibGlj",
+      "accessList": [
+        "127.0.0.1",
+        "::1/128"
+      ]
+    },
+    "test": {
+      "base64pass": "cHVibGlj",
+      "accessList": [
+        "10.0.0.0/8",
+        "::1/128"
+      ]
+    }
+  }
+}
